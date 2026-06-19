@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Sports Meet - Results Management System
 
 A full-stack web application for managing and displaying sports meet results.
@@ -7,7 +6,7 @@ A full-stack web application for managing and displaying sports meet results.
 
 - **Frontend:** React + Vite
 - **Backend:** Node.js + Express
-- **Database:** MySQL
+- **Database:** MongoDB Atlas + Mongoose
 
 ## Project Structure
 
@@ -15,14 +14,20 @@ A full-stack web application for managing and displaying sports meet results.
 sports-meet/
 ├── client/          # React + Vite Frontend
 ├── server/          # Node.js + Express Backend
-└── database/        # SQL Schema
+└── database/        # Legacy SQL schema placeholder
 ```
 
 ## Getting Started
 
 ### Database Setup
-1. Create a MySQL database named `sports_meet`
-2. Run `database/schema.sql` to create the tables
+1. Create a MongoDB Atlas cluster or use a local MongoDB instance
+2. Set `server/.env` with `MONGODB_URI` and `MONGODB_LOCAL_URI`
+3. The app uses Mongoose models in `server/models/`, so no SQL migration is required
+
+### Default Admin Login
+1. Username: `admin`
+2. Password: `Sathu1234`
+3. You can change both values in `server/.env` using `ADMIN_USERNAME` and `ADMIN_PASSWORD`
 
 ### Backend
 ```bash
@@ -43,7 +48,3 @@ npm run dev
 - View Gold, Silver, Bronze winners
 - Admin panel for managing events and results
 - JWT-based admin authentication
-=======
-# Sports-meet
-Blue Star Sports Club
->>>>>>> 47b2a845c9dd28a69d984ab5a0ef66657d696deb

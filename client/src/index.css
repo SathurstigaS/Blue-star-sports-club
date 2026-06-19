@@ -1377,3 +1377,6 @@ a {
 .animate-in:nth-child(5) { animation-delay: 0.25s; }
 .animate-in:nth-child(6) { animation-delay: 0.3s; }
 .animate-in:nth-child(n+7) { animation-delay: 0.35s; }
+
+.pdf-cell { display: flex; align-items: center; }
+.pdf-actions { display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; }
